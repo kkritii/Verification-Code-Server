@@ -1,8 +1,10 @@
 import { Router } from "express";
 
-import verifyCodeController from "./controllers/verifyCode.js";
+import * as verifyCodeController from "./controllers/verifyCode.js";
 
 const router = Router();
-router.post('/verify', verifyCodeController);
+
+router.get('/', verifyCodeController.checkServerStatus);
+router.post('/verify', verifyCodeController.verifyCode);
 
 export default router;
