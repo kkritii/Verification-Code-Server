@@ -26,7 +26,7 @@ To get started with the project, follow these steps:
 
 ## Configuration
 
-The server requires MongoDB to be configured. You can do this by creating a .env file in the root of the project and adding the following:
+Create a .env file in the root of the project and adding the following:
 
 ```
 PORT=4000
